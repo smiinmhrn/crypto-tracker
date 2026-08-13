@@ -1,4 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import CoinsDetailes from "./pages/CoinsDetailes";
 
 function App() {
   return (
