@@ -28,3 +28,11 @@ A modern cryptocurrency tracker built with React.js and the CoinGecko API.
 ```bash
 npm install
 npm run dev
+```
+
+##  Preview
+
+![Crypto Tracker Preview](preview-1.png)
+![Crypto Tracker Preview](preview-2.png)
+![Crypto Tracker Preview](preview-3.png)
+
