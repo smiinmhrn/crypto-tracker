@@ -7,13 +7,17 @@ const Coins = () => {
   const { data, loading, error } = useFetch(getCoinsData);
 
   return (
-    <div className="app">
+    <>
       {loading ? (
         <Loading />
       ) : (
-        data.map((coin) => <Coin key={coin.id} coin={coin} />)
+        <div className="crypto-container">
+          {data.map((coin) => (
+            <Coin key={coin.id} coin={coin} />
+          ))}
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
