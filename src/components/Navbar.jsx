@@ -1,11 +1,11 @@
 import Filter from "./Filter";
 import View from "./view";
 
-const Navbar = () => {
+const Navbar = ({ viewMode, setViewMode }) => {
   return (
     <div className="controls">
       <Filter />
-      <View />
+      <View viewMode={viewMode} setViewMode={setViewMode} />
     </div>
   );
 };

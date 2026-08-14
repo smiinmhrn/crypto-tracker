@@ -1,9 +1,14 @@
-import Coins from "./components/Coins";
+import { useState } from "react";
+import Coins from "../components/Coins";
+import Navbar from "../components/Navbar";
 
 const HomePage = () => {
+  const [viewMode, setViewMode] = useState("grid");
+
   return (
     <div className="app">
-      <Coins />
+      <Navbar viewMode={viewMode} setViewMode={setViewMode} />
+      <Coins viewMode={viewMode}/>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import getCoinsData from "../api/api";
 import Loading from "./Loading";
 import Coin from "./Coin";
 
-const Coins = () => {
+const Coins = ({ viewMode }) => {
   const { data, loading, error } = useFetch(getCoinsData);
 
   return (
@@ -11,7 +11,7 @@ const Coins = () => {
       {loading ? (
         <Loading />
       ) : (
-        <div className="crypto-container">
+        <div className={`crypto-container ${viewMode}`}>
           {data.map((coin) => (
             <Coin key={coin.id} coin={coin} />
           ))}
