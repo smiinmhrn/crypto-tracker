@@ -44,11 +44,18 @@ export const getCoinData = async (id) => {
 };
 
 export const getChartData = async (id) => {
-  const response = await fetch(
-    `${BASE_URL}/coins/${id}/market_chart?vs_currency=usd&days=7`,
-  );
-  if (!response.ok) {
-    throw new Error("Failed to fetch chart data");
+  const CHART_URL = `${BASE_URL}/coins/${id}/market_chart`;
+
+  try {
+    const response = await axios.get(CHART_URL, {
+      params: {
+        vs_currency: "usd",
+        days: 7,
+      },
+    });
+
+    return response.data;
+  } catch (error) {
+    throw new Error("Failed to fetch chart data", { cause: error });
   }
-  return response.json();
 };
