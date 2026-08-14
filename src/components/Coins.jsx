@@ -3,8 +3,9 @@ import getCoinsData from "../api/api";
 import Loading from "./Loading";
 import Coin from "./Coin";
 import sortCoins from "../utils/sort/sortCoins";
+import searchCoins from "../utils/search/search";
 
-const Coins = ({ viewMode, sortBy }) => {
+const Coins = ({ viewMode, sortBy, searchQuery }) => {
   const { data, loading, error } = useFetch(getCoinsData);
 
   if (loading) {
@@ -15,7 +16,8 @@ const Coins = ({ viewMode, sortBy }) => {
     return <p>Something went wrong!</p>;
   }
 
-  const sortedCoins = sortCoins(data, sortBy);
+  const searchedCoins = searchCoins(data, searchQuery);
+  const sortedCoins = sortCoins(searchedCoins, sortBy);
 
   return (
     <div className={`crypto-container ${viewMode}`}>

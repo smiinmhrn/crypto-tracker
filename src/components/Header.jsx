@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import Search from "./Search";
 import BackButton from "./BackButton";
 
-const Header = () => {
+const Header = ({ searchQuery, setsearchQuery }) => {
   const location = useLocation();
 
   return (
@@ -12,9 +12,12 @@ const Header = () => {
           <h1>🚀 Crypto Tracker</h1>
           <p>Real-time cryptocurrency prices and market data</p>
         </div>
+        {location.pathname === "/" ? (
+          <Search searchQuery={searchQuery} setsearchQuery={setsearchQuery} />
+        ) : (
+          <BackButton />
+        )}
       </div>
-
-      {location.pathname === "/" ? <Search /> : <BackButton />}
     </header>
   );
 };
