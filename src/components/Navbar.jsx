@@ -1,10 +1,10 @@
-import Filter from "./Filter";
+import SortDropDown from "./SortDropDown";
 import View from "./view";
 
-const Navbar = ({ viewMode, setViewMode }) => {
+const Navbar = ({ viewMode, setViewMode, sortBy, setSortBy }) => {
   return (
     <div className="controls">
-      <Filter />
+      <SortDropDown sortBy={sortBy} setSortBy={setSortBy} />
       <View viewMode={viewMode} setViewMode={setViewMode} />
     </div>
   );
