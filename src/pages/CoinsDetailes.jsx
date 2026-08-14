@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import CoinHeader from "../components/CoinHeader";
 import CoinPrice from "../components/CoinPrice";
 import PriceRanges from "../components/PriceRanges";
+import CoinChart from "../components/CoinChart";
 
 const CoinsDetailes = () => {
   const { id } = useParams();
@@ -45,6 +46,8 @@ const CoinsDetailes = () => {
 
           <PriceRanges coin={data} />
         </div>
+
+        <CoinChart coinId={id} />
       </div>
     </div>
   );
