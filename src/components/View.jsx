@@ -1,5 +1,3 @@
-// import { useState } from "react";
-
 const View = ({ viewMode, setViewMode }) => {
   return (
     <div className="view-toggle">
