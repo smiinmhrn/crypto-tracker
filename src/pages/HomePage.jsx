@@ -2,6 +2,7 @@ import { useState } from "react";
 import Coins from "../components/Coins";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   const [viewMode, setViewMode] = useState("grid");
@@ -18,6 +19,7 @@ const HomePage = () => {
         setSortBy={setSortBy}
       />
       <Coins viewMode={viewMode} sortBy={sortBy} searchQuery={searchQuery} />
+      <Footer />
     </div>
   );
 };

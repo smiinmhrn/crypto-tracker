@@ -7,6 +7,8 @@ import CoinHeader from "../components/CoinHeader";
 import CoinPrice from "../components/CoinPrice";
 import PriceRanges from "../components/PriceRanges";
 import CoinChart from "../components/CoinChart";
+import CoinState from "../components/CoinState";
+import Footer from "../components/Footer";
 
 const CoinsDetailes = () => {
   const { id } = useParams();
@@ -48,7 +50,9 @@ const CoinsDetailes = () => {
         </div>
 
         <CoinChart coinId={id} />
+        <CoinState coin={data} />
       </div>
+      <Footer />
     </div>
   );
 };
