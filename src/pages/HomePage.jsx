@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Coins from "../components/Coins";
 import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
 const HomePage = () => {
   const [viewMode, setViewMode] = useState("grid");
@@ -8,6 +9,7 @@ const HomePage = () => {
 
   return (
     <div className="app">
+      <Header />
       <Navbar
         viewMode={viewMode}
         setViewMode={setViewMode}
