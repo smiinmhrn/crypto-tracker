@@ -17,7 +17,11 @@ const CoinsDetailes = () => {
   const { data, loading, error } = useFetch(() => getCoinData(id));
 
   if (loading) {
-    return <Loading />;
+    return (
+      <div className="app">
+        <Loading />
+      </div>
+    );
   }
 
   if (error) {
