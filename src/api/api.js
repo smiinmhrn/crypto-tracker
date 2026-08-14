@@ -2,7 +2,7 @@ import axios from "axios";
 
 const BASE_URL = "https://api.coingecko.com/api/v3";
 
-const getCoinsData = async () => {
+export const getCoinsData = async () => {
   const COINS_URL = `${BASE_URL}/coins/markets`;
 
   try {
@@ -22,4 +22,23 @@ const getCoinsData = async () => {
   }
 };
 
-export default getCoinsData;
+export const getCoinData = async (id) => {
+  const COINS_URL = `${BASE_URL}/coins/${id}`;
+
+  try {
+    const response = await axios.get(COINS_URL, {
+      params: {
+        localization: false,
+        tickers: false,
+        market_data: true,
+        community_data: false,
+        developer_data: false,
+        sparkline: false,
+      },
+    });
+
+    return response.data;
+  } catch (error) {
+    throw new Error("Failed to fetch", { cause: error });
+  }
+};

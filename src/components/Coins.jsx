@@ -1,5 +1,5 @@
 import useFetch from "../hooks/useFetch";
-import getCoinsData from "../api/api";
+import { getCoinsData } from "../api/api";
 import Loading from "./Loading";
 import Coin from "./Coin";
 import sortCoins from "../utils/sort/sortCoins";
