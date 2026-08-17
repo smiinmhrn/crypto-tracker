@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "@/hooks/useFetch";
-import { getCoinData } from "@/api/getCoinData";
+import { getCoinData } from "@/apis/getCoinData";
 import Loading from "@/components/loading/Loading";
 import Header from "@/components/header/Header";
 import CoinHeader from "@/components/coin/CoinHeader";
