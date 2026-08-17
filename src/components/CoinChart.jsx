@@ -9,7 +9,7 @@ import {
 } from "recharts";
 
 import useFetch from "../hooks/useFetch";
-import { getChartData } from "../api/api";
+import { getChartData } from "../api/getChartData";
 import Loading from "./Loading";
 
 const CoinChart = ({ coinId }) => {
