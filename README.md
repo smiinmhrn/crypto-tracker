@@ -32,7 +32,9 @@ npm run dev
 
 ##  Preview
 
-![Crypto Tracker Preview](preview-1.png)
-![Crypto Tracker Preview](preview-2.png)
-![Crypto Tracker Preview](preview-3.png)
+![Crypto Tracker Preview](public/preview/preview-1.png)
+
+![Crypto Tracker Preview](public/preview/preview-2.png)
+
+![Crypto Tracker Preview](public/preview/preview-3.png)
 
