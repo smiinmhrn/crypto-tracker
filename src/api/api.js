@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://api.coingecko.com/api/v3";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const getCoinsData = async () => {
   const COINS_URL = `${BASE_URL}/coins/markets`;
