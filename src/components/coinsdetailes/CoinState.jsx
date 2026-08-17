@@ -1,4 +1,4 @@
-import marketCapFormatter from "../../utils/formatter/marketCapFormatter";
+import marketCapFormatter from "@/utils/formatter/marketCapFormatter";
 
 const CoinState = ({ coin }) => {
   return (

@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
-import Search from "./Search";
-import BackButton from "./BackButton";
+import Search from "@/components/header/Search";
+import BackButton from "@/components/header/BackButton";
 
 const Header = ({ searchQuery, setsearchQuery }) => {
   const location = useLocation();

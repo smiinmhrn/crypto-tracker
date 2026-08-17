@@ -1,5 +1,5 @@
-import SortDropDown from "./SortDropDown";
-import View from "./View";
+import SortDropDown from "@/components/navbar/SortDropDown";
+import View from "@/components/navbar/View";
 
 const Navbar = ({ viewMode, setViewMode, sortBy, setSortBy }) => {
   return (

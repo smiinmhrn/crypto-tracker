@@ -1,5 +1,5 @@
-import priceFormatter from "../../utils/formatter/priceFormatter";
-import marketCapFormatter from "../../utils/formatter/marketCapFormatter";
+import priceFormatter from "@/utils/formatter/priceFormatter";
+import marketCapFormatter from "@/utils/formatter/marketCapFormatter";
 import { Link } from "react-router-dom";
 
 const Coin = ({ coin }) => {
