@@ -1,14 +1,14 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import { getCoinData } from "../api/getCoinData";
-import Loading from "../components/Loading";
-import Header from "../components/Header";
-import CoinHeader from "../components/CoinHeader";
-import CoinPrice from "../components/CoinPrice";
-import PriceRanges from "../components/PriceRanges";
-import CoinChart from "../components/CoinChart";
-import CoinState from "../components/CoinState";
-import Footer from "../components/Footer";
+import Loading from "../components/loading/Loading";
+import Header from "../components/header/Header";
+import CoinHeader from "../components/coin/CoinHeader";
+import CoinPrice from "../components/coin/CoinPrice";
+import PriceRanges from "../components/coinsdetailes/PriceRanges";
+import CoinChart from "../components/coinsdetailes/CoinChart";
+import CoinState from "../components/coinsdetailes/CoinState";
+import Footer from "../components/footer/Footer";
 
 const CoinsDetailes = () => {
   const { id } = useParams();

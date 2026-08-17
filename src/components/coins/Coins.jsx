@@ -1,9 +1,9 @@
-import useFetch from "../hooks/useFetch";
-import { getCoinsData } from "../api/getCoinsData";
-import Loading from "./Loading";
-import Coin from "./Coin";
-import sortCoins from "../utils/sort/sortCoins";
-import searchCoins from "../utils/search/search";
+import useFetch from "../../hooks/useFetch";
+import { getCoinsData } from "../../api/getCoinsData";
+import Loading from "../loading/Loading";
+import Coin from "../coin/Coin";
+import sortCoins from "../../utils/sort/sortCoins";
+import searchCoins from "../../utils/search/search";
 
 const Coins = ({ viewMode, sortBy, searchQuery }) => {
   const { data, loading, error } = useFetch(getCoinsData);

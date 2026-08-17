@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Coins from "../components/Coins";
-import Navbar from "../components/Navbar";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Coins from "../components/coins/Coins";
+import Navbar from "../components/navbar/Navbar";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
 const HomePage = () => {
   const [viewMode, setViewMode] = useState("grid");

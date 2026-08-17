@@ -1,4 +1,4 @@
-import priceFormatter from "../utils/formatter/priceFormatter";
+import priceFormatter from "../../utils/formatter/priceFormatter";
 
 const CoinPrice = ({ coin }) => {
   const priceChange = coin.market_data.price_change_percentage_24h || 0;

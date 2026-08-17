@@ -8,9 +8,9 @@ import {
   Tooltip,
 } from "recharts";
 
-import useFetch from "../hooks/useFetch";
-import { getChartData } from "../api/getChartData";
-import Loading from "./Loading";
+import useFetch from "../../hooks/useFetch";
+import { getChartData } from "../../api/getChartData";
+import Loading from "../loading/Loading";
 
 const CoinChart = ({ coinId }) => {
   const { data, loading, error } = useFetch(() => getChartData(coinId));

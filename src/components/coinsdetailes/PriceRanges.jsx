@@ -1,4 +1,4 @@
-import priceFormatter from "../utils/formatter/priceFormatter";
+import priceFormatter from "../../utils/formatter/priceFormatter";
 
 const PriceRanges = ({ coin }) => {
   return (
